@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: sans-serif;
-            background-color: #f0f2f5;
+            background-color: #ffffff;
             color: #333;
             margin: 0;
             padding: 40px 20px;
@@ -20,62 +20,40 @@
             max-width: 400px;
             text-align: center;
         }
-        .welcome-box {
-            background: white;
-            padding: 30px 20px;
-            border-radius: 16px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            border: 1px solid #ccc;
-            margin-bottom: 20px;
-        }
         h1 {
-            font-size: 28px;
-            margin: 0 0 10px 0;
-            color: #007bff;
+            font-size: 32px;
+            margin: 0 0 35px 0;
+            color: #333;
             font-weight: bold;
-            letter-spacing: 0.5px;
         }
-        .desc {
-            font-size: 14px;
-            color: #555;
-            line-height: 1.6;
-            margin: 0 0 25px 0;
-            text-align: left;
-        }
-        
         .ver-btn {
             display: block;
             width: 100%;
-            padding: 16px;
-            font-size: 16px;
+            padding: 18px;
+            font-size: 18px;
             font-weight: bold;
             text-decoration: none;
-            border-radius: 10px;
-            margin-bottom: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
             box-sizing: border-box;
-            transition: transform 0.1s, box-shadow 0.2s;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: opacity 0.1s;
         }
         .ver-btn:active {
-            transform: scale(0.98);
+            opacity: 0.8;
         }
-        
-        /* 通常版（オンライン同期） */
         .btn-online {
             background-color: #007bff;
             color: white;
         }
-        /* 軽量版（オフライン爆速） */
         .btn-offline {
             background-color: #28a745;
             color: white;
         }
-        
         .btn-sub {
             display: block;
-            font-size: 12px;
+            font-size: 13px;
             font-weight: normal;
-            margin-top: 4px;
+            margin-top: 6px;
             opacity: 0.9;
         }
     </style>
@@ -83,22 +61,17 @@
 <body>
 
     <div class="container">
-        <div class="welcome-box">
-            <h1>Tangoo</h1>
-            <p class="desc">
-                「Tangoo」は、自分だけの単語帳を誰でも簡単に作って学習できるウェブアプリです。用途に合わせて2つのバージョンから選んで使えます。
-            </p>
-
-            <a href="https://tangoo-app.github.io/app/" class="ver-btn btn-online">
-                通常版を開く (アカウント同期)
-                <span class="btn-sub">複数端末でデータを同期・保存できます</span>
-            </a>
-
-            <a href="https://tangoo-app.github.io/app-lite/" class="ver-btn btn-offline">
-                軽量版を開く (オフライン対応)
-                <span class="btn-sub">通信量を気にせず、爆速でサクサク動きます</span>
-            </a>
-        </div>
+        <h1>Tangoo</h1>
+        
+        <a href="https://tangoo-app.github.io/app/" class="ver-btn btn-online">
+            通常版を開く
+            <span class="btn-sub">アカウントで同期可</span>
+        </a>
+        
+        <a href="https://tangoo-app.github.io/app-lite/" class="ver-btn btn-offline">
+            軽量版を開く
+            <span class="btn-sub">通信速度が遅くてもサクサク動きます。アカウント不要</span>
+        </a>
     </div>
 
 </body>
